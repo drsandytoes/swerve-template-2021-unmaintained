@@ -38,20 +38,20 @@ public final class Constants {
     public static final CANDeviceID FRONT_LEFT_MODULE_DRIVE_MOTOR = new CANDeviceID(7, kCanivoreBusName); 
     public static final CANDeviceID FRONT_LEFT_MODULE_STEER_MOTOR = new CANDeviceID(8, kCanivoreBusName); 
     public static final CANDeviceID FRONT_LEFT_MODULE_STEER_ENCODER = new CANDeviceID(4, kCanivoreBusName); 
-    public static final double FRONT_LEFT_MODULE_STEER_OFFSET = -Math.toRadians(0.0); // FIXME Measure and set front left steer offset
+    public static final double FRONT_LEFT_MODULE_STEER_OFFSET = -Math.toRadians(162.509765625); // Set to 0.0. when calibrating
 
     public static final CANDeviceID FRONT_RIGHT_MODULE_DRIVE_MOTOR = new CANDeviceID(1, kCanivoreBusName); 
     public static final CANDeviceID FRONT_RIGHT_MODULE_STEER_MOTOR = new CANDeviceID(2, kCanivoreBusName);
     public static final CANDeviceID FRONT_RIGHT_MODULE_STEER_ENCODER = new CANDeviceID(1, kCanivoreBusName);
-    public static final double FRONT_RIGHT_MODULE_STEER_OFFSET = -Math.toRadians(0.0); // FIXME Measure and set front right steer offset
+    public static final double FRONT_RIGHT_MODULE_STEER_OFFSET = -Math.toRadians(72.158203125); 
 
     public static final CANDeviceID BACK_LEFT_MODULE_DRIVE_MOTOR = new CANDeviceID(5, kCanivoreBusName);
     public static final CANDeviceID BACK_LEFT_MODULE_STEER_MOTOR = new CANDeviceID(6, kCanivoreBusName);
     public static final CANDeviceID BACK_LEFT_MODULE_STEER_ENCODER = new CANDeviceID(3, kCanivoreBusName);
-    public static final double BACK_LEFT_MODULE_STEER_OFFSET = -Math.toRadians(0.0); // FIXME Measure and set back left steer offset
+    public static final double BACK_LEFT_MODULE_STEER_OFFSET = -Math.toRadians(34.8046875);
 
     public static final CANDeviceID BACK_RIGHT_MODULE_DRIVE_MOTOR = new CANDeviceID(3, kCanivoreBusName); 
     public static final CANDeviceID BACK_RIGHT_MODULE_STEER_MOTOR = new CANDeviceID(4, kCanivoreBusName); 
     public static final CANDeviceID BACK_RIGHT_MODULE_STEER_ENCODER = new CANDeviceID(2, kCanivoreBusName);
-    public static final double BACK_RIGHT_MODULE_STEER_OFFSET = -Math.toRadians(0.0); // FIXME Measure and set back right steer offset
+    public static final double BACK_RIGHT_MODULE_STEER_OFFSET = -Math.toRadians(175.25390625); 
 }
