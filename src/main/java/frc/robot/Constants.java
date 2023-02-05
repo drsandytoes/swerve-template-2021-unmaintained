@@ -16,6 +16,11 @@ import com.swervedrivespecialties.swervelib.CANDeviceID;
  */
 public final class Constants {
     /**
+     * Canivore bus name
+     */
+    public static final String kCanivoreBusName = "Canivore";
+
+    /**
      * The left-to-right distance between the drivetrain wheels
      *
      * Should be measured from center to center.
@@ -28,25 +33,25 @@ public final class Constants {
      */
     public static final double DRIVETRAIN_WHEELBASE_METERS = 0.63; // 24.75 in
 
-    public static final CANDeviceID DRIVETRAIN_PIGEON_ID = new CANDeviceID(1, CANDeviceID.kCanivoreBusName);
+    public static final CANDeviceID DRIVETRAIN_PIGEON_ID = new CANDeviceID(1, kCanivoreBusName);
 
-    public static final CANDeviceID FRONT_LEFT_MODULE_DRIVE_MOTOR = new CANDeviceID(7, CANDeviceID.kCanivoreBusName); 
-    public static final CANDeviceID FRONT_LEFT_MODULE_STEER_MOTOR = new CANDeviceID(8, CANDeviceID.kCanivoreBusName); 
-    public static final CANDeviceID FRONT_LEFT_MODULE_STEER_ENCODER = new CANDeviceID(4, CANDeviceID.kCanivoreBusName); 
+    public static final CANDeviceID FRONT_LEFT_MODULE_DRIVE_MOTOR = new CANDeviceID(7, kCanivoreBusName); 
+    public static final CANDeviceID FRONT_LEFT_MODULE_STEER_MOTOR = new CANDeviceID(8, kCanivoreBusName); 
+    public static final CANDeviceID FRONT_LEFT_MODULE_STEER_ENCODER = new CANDeviceID(4, kCanivoreBusName); 
     public static final double FRONT_LEFT_MODULE_STEER_OFFSET = -Math.toRadians(0.0); // FIXME Measure and set front left steer offset
 
-    public static final CANDeviceID FRONT_RIGHT_MODULE_DRIVE_MOTOR = new CANDeviceID(1, CANDeviceID.kCanivoreBusName); 
-    public static final CANDeviceID FRONT_RIGHT_MODULE_STEER_MOTOR = new CANDeviceID(2, CANDeviceID.kCanivoreBusName);
-    public static final CANDeviceID FRONT_RIGHT_MODULE_STEER_ENCODER = new CANDeviceID(1, CANDeviceID.kCanivoreBusName);
+    public static final CANDeviceID FRONT_RIGHT_MODULE_DRIVE_MOTOR = new CANDeviceID(1, kCanivoreBusName); 
+    public static final CANDeviceID FRONT_RIGHT_MODULE_STEER_MOTOR = new CANDeviceID(2, kCanivoreBusName);
+    public static final CANDeviceID FRONT_RIGHT_MODULE_STEER_ENCODER = new CANDeviceID(1, kCanivoreBusName);
     public static final double FRONT_RIGHT_MODULE_STEER_OFFSET = -Math.toRadians(0.0); // FIXME Measure and set front right steer offset
 
-    public static final CANDeviceID BACK_LEFT_MODULE_DRIVE_MOTOR = new CANDeviceID(5, CANDeviceID.kCanivoreBusName);
-    public static final CANDeviceID BACK_LEFT_MODULE_STEER_MOTOR = new CANDeviceID(6, CANDeviceID.kCanivoreBusName);
-    public static final CANDeviceID BACK_LEFT_MODULE_STEER_ENCODER = new CANDeviceID(3, CANDeviceID.kCanivoreBusName);
+    public static final CANDeviceID BACK_LEFT_MODULE_DRIVE_MOTOR = new CANDeviceID(5, kCanivoreBusName);
+    public static final CANDeviceID BACK_LEFT_MODULE_STEER_MOTOR = new CANDeviceID(6, kCanivoreBusName);
+    public static final CANDeviceID BACK_LEFT_MODULE_STEER_ENCODER = new CANDeviceID(3, kCanivoreBusName);
     public static final double BACK_LEFT_MODULE_STEER_OFFSET = -Math.toRadians(0.0); // FIXME Measure and set back left steer offset
 
-    public static final CANDeviceID BACK_RIGHT_MODULE_DRIVE_MOTOR = new CANDeviceID(3, CANDeviceID.kCanivoreBusName); 
-    public static final CANDeviceID BACK_RIGHT_MODULE_STEER_MOTOR = new CANDeviceID(4, CANDeviceID.kCanivoreBusName); 
-    public static final CANDeviceID BACK_RIGHT_MODULE_STEER_ENCODER = new CANDeviceID(2, CANDeviceID.kCanivoreBusName);
+    public static final CANDeviceID BACK_RIGHT_MODULE_DRIVE_MOTOR = new CANDeviceID(3, kCanivoreBusName); 
+    public static final CANDeviceID BACK_RIGHT_MODULE_STEER_MOTOR = new CANDeviceID(4, kCanivoreBusName); 
+    public static final CANDeviceID BACK_RIGHT_MODULE_STEER_ENCODER = new CANDeviceID(2, kCanivoreBusName);
     public static final double BACK_RIGHT_MODULE_STEER_OFFSET = -Math.toRadians(0.0); // FIXME Measure and set back right steer offset
 }
